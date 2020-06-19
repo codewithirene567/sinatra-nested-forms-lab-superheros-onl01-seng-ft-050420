@@ -6,9 +6,10 @@ attr_accessor :name, :power, :bio
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
+    HEROS << self
   end
 
   def self.all
-    
+    HEROS
   end
 end

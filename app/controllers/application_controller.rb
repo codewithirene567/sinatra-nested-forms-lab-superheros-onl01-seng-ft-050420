@@ -9,7 +9,9 @@ class App < Sinatra::Base
   end
 
   post '/teams' do
-    @team =
+    @team = Team.new(params[:teams])
+
+    params[]
   erb :teams
   end
 

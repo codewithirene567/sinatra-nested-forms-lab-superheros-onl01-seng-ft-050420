@@ -8,4 +8,7 @@ attr_accessor :name, :power, :bio
     @bio = params[:bio]
   end
 
+  def self.all
+    
+  end
 end

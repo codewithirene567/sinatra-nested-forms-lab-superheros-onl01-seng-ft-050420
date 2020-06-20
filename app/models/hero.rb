@@ -10,6 +10,10 @@ HEROS = []
     HEROS << self
   end
 
+  def save
+    self.class.all << HEROS
+  end
+  
   def self.all
     HEROS
   end

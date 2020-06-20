@@ -8,7 +8,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  
+
 
     post '/teams' do
           @team = Team.new({name: params[:team][:name], motto: params[:team][:motto]})

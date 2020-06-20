@@ -14,7 +14,7 @@ class App < Sinatra::Base
    heros = params[:team][:heros]
 
     heros.each do |attributes|
-      Hero.new({name: hero_params[:name], power: hero_params[:power]})
+      Hero.new({name: params[:name], power: params[:power], bio: params[:bio]})
     end
     @heros = Hero.all
   erb :teams

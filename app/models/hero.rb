@@ -7,7 +7,7 @@ HEROS = []
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
-    HEROS << self
+    self.save
   end
 
   def save

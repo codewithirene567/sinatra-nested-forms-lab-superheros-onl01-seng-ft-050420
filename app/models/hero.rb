@@ -3,6 +3,7 @@ class Hero
 attr_reader :name, :power, :bio
 
 @@HEROS = []
+
   def initialize(params)
     @name = params[:name]
     @power = params[:power]

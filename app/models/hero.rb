@@ -7,12 +7,10 @@ attr_reader :name, :power, :bio
     @name = params[:name]
     @power = params[:power]
     @bio = params[:bio]
-    self.save
+    @@HEROS << self
   end
 
-  def save
-    self.class.all << self
-  end
+
 
   def self.all
     @@HEROS

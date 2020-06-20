@@ -11,7 +11,7 @@ HEROS = []
   end
 
   def save
-    self.class.all << HEROS
+    self.class.all << self
   end
 
   def self.all

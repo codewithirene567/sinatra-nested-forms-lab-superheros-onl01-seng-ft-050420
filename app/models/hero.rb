@@ -10,9 +10,7 @@ attr_reader :name, :power, :bio
     @@HEROS << self
   end
 
-
-
-  def self.all
+ def self.all
     @@HEROS
   end
 end
